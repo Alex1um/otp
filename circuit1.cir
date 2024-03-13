@@ -206,7 +206,7 @@ NodeVoltageFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=0,1, -1,-1, 0,0, 174,174,1829,753
+Window Placement in Transient Analysis=0,1, -1,-1, 0,0, 117,356,1772,935
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -411,8 +411,8 @@ ON=54,17,FILE
 V=Amp
 
 [Attr]
-ON=13,33,Param:GAIN
-V=Kkr * 0.45
+ON=-9,51,Param:GAIN
+V=Kkr * 0.45 + 0.1
 Style=8192
 
 [Attr]
@@ -533,7 +533,7 @@ V=F
 
 [Attr]
 ON=22,28,Param:FS
-V=1/((Tkr / 1.2)*s)
+V=1/((Tkr / 1.2 - 5)*s)
 Style=8192
 
 [Attr]
@@ -1125,9 +1125,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=345,222
+SB 3=345,510
 Scale 3=0.66666666666666663
-Px=472,442
+Px=662,758
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1457,7 +1457,7 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TRange=20
+TRange=100
 TStep=0
 NPts=25
 Temp=27

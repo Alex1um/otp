@@ -3,11 +3,11 @@
 ***                                                                          ***
 ***                                                                          ***
 ***                      Transient Analysis of circuit1                      ***
-***                           3/13/2024 3:13:44 PM                           ***
+***                           3/13/2024 3:24:46 PM                           ***
 ********************************************************************************
 Limits
 ======
-Time Range               20
+Time Range               100
 Maximum Time Step        0
 Number of Points         25
 Temperature              Linear 27
