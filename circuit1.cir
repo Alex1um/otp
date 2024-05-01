@@ -4,7 +4,7 @@ Version=11.01
 Program=Micro-Cap
 Component Version=10.00
 Shape Version=11.00
-Screen=1920,1080
+Screen=2181,1228
 MCAPVersion=11.2.0.3
 Key ID=Demo
 NLCnt=61
@@ -115,7 +115,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=206
+Used=201
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -126,7 +126,7 @@ Name=Voltage Source
 Definition=VSpice
 Shape=SPICE_V
 Mask=4865
-Used=30
+Used=25
 memo=Voltage Source
 Label Offset=19,13,15,13
 PinCnt=2
@@ -138,7 +138,7 @@ Name=Amp
 Definition=Macro
 Shape=Amp
 Mask=4096
-Used=37
+Used=29
 memo=Amplifier Macro
 Label Offset=54,3,12,39
 PinCnt=2
@@ -150,7 +150,7 @@ Name=Sub
 Definition=Macro
 Shape=Sub
 Mask=4096
-Used=22
+Used=18
 memo=Subtractor Macro
 Label Offset=44,5,15,20
 PinCnt=3
@@ -163,7 +163,7 @@ Name=Sum3
 Definition=Macro
 Shape=Sum3
 Mask=4096
-Used=3
+Used=2
 memo=3-Input Summer Macro
 Label Offset=25,41,12,44
 PinCnt=4
@@ -177,7 +177,7 @@ Name=F
 Definition=Macro
 Shape=FofS
 Mask=20480
-Used=21
+Used=5
 memo=Transfer Function Macro
 Label Offset=22,-14,-20,60
 PinCnt=2
@@ -189,7 +189,7 @@ Name=Abs
 Definition=Macro
 Shape=Absolute
 Mask=20480
-Used=8
+Used=3
 memo=Absolute Value Macro
 Label Offset=20,25,28,28
 PinCnt=2
@@ -197,7 +197,7 @@ Pin="PinA",a,0,0,-11,-3
 Pin="PinB",a,10,0,-6,-3
 
 [Circuit]
-Window Placement=0,3, -1,-1, -4,-30, 174,174,1829,753
+Window Placement=0,3, -1,-1, -4,-23, 174,174,1829,753
 Default Object=Color=#000080
 Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -206,7 +206,7 @@ NodeVoltageFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=0,1, -1,-1, 0,0, -88,50,1567,629
+Window Placement in Transient Analysis=0,1, -1,-1, 0,0, 245,170,1900,734
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -513,9 +513,6 @@ Pxs=488,648,488,656
 
 [Wire]
 Pxs=488,696,488,704
-
-[Wire]
-Pxs=520,816,1080,816
 
 [Comp]
 Name=F
@@ -859,6 +856,9 @@ Pxs=552,568,552,648
 [Wire]
 Pxs=552,568,560,568
 
+[Wire]
+Pxs=520,816,1080,816
+
 [Grid Text]
 Text=".define Tc Td / 8"
 Px=880,928
@@ -1125,9 +1125,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=345,144
+SB 3=345,576
 Scale 3=0.66666666666666663
-Px=916,305
+Px=1078,810
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1233,7 +1233,7 @@ ComponentCounts=True
 
 [Transient]
 WinID=1
-Window Placement=0,1, -1,-1, 0,0, 203,0,1862,786
+Window Placement=0,1, -1,-1, 0,0, 35,16,1694,802
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1298,11 +1298,11 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=7
+MonMaxShow=6
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
-MonExprYWidth=314
+MonExprYWidth=313
 MonRangeXWidth=90
 MonRangeYWidth=90
 AnimateWait=None
@@ -1331,7 +1331,7 @@ Num Out Allow Dup Y Expr=False
 Num Out Low="TSTART"
 Num Out High="TMAX"
 Num Out Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
-Num Out Window Placement=0,1, -1,-1, 0,0, 145,145,1800,724
+Num Out Window Placement=0,1, -1,-1, 0,0, 968,101,2623,704
 Num Out Format=3
 Num Out HideNonSelected=False
 AutoSaveWave=False
@@ -1458,9 +1458,9 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TRange=150
+TRange=100
 TStep=0
-NPts=25
+NPts=50
 Temp=27
 RetraceRuns=1
 StateVar=Zero
